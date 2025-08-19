@@ -30,10 +30,11 @@
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
+
 
 .navbar-menu li a {
   color: #fff !important;
@@ -61,6 +62,9 @@
   background: transparent !important;
   font-size: 28px;
   color: #fff !important;
+}
+.navbar-toggler-icon{
+  margin-top: 12px;
 }
 
 
@@ -334,17 +338,47 @@
 }
 
 .service-card {
-  background: rgba(55, 179, 250, 0.1);
+  position: relative;
+  border-radius: 1.5rem; /* same as card-spotlight */
+  border: 1px solid #222;
+  background-color: #111; /* dark background */
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  height: 100%;  /* makes all cards equal */
+  height: 100%;
   display: flex;
   flex-direction: column;
-
   justify-content: flex-start;
+  transition: transform 0.3s ease;
 }
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Spotlight effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.service-card:hover::before,
+.service-card:focus-within::before {
+  opacity: 0.6;
+}
+
 
 .service-card h3 {
   margin: 20px 0 10px;
@@ -651,6 +685,55 @@
   box-shadow: 0 4px 15px rgba(102, 102, 255, 0.5);
 }
 
+.get-in-touch-heading {
+  font-size: 65px;
+  font-weight: 700;
+  color: #fff; /* adjust if background is light */
+  position: relative;
+  display: inline-block;
+}
+
+/* Large screens (desktops >1200px) */
+@media (min-width: 1200px) {
+  .get-in-touch-heading {
+    font-size: 65px;
+  }
+}
+
+/* Medium screens (tablets 768px–1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .get-in-touch-heading {
+    font-size: 50px;
+  }
+}
+
+/* Small screens (mobiles <768px) */
+@media (max-width: 767px) {
+  .get-in-touch-heading {
+    font-size: 35px;
+    text-align: center; /* optional, looks better on mobile */
+  }
+}
+
+/* Extra small (very small phones <480px) */
+@media (max-width: 480px) {
+  .get-in-touch-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+.get-in-touch-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #37b3fa; /* your theme blue */
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+
 /* Responsive tweaks */
 @media(max-width: 768px) {
   .contact-form {
@@ -677,3 +760,7 @@
 .footer a:hover {
   color: #ff8c00; /* Orange hover for a modern effect */
 }
+
+
+
+
