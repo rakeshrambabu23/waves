@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>uxwave | webdesign agency</title>
   </head>
   <body>
     
@@ -24,76 +24,69 @@
 <!-- Navbar -->
 
 <!-- Navbar -->
-<nav class="custom-navbar navbar">
-  <div class="container">
+<!-- Banner Section -->
+  <div class="banner-wrapper">
+    <!-- Silk Shader Canvas -->
+    <div id="silk-canvas"></div>
+
+    <!-- Navbar inside Banner -->
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg">
+  <div class="container d-flex justify-content-between align-items-center">
     <!-- Logo -->
     <a class="navbar-logo" href="#">
       <img src="images/logo.png" alt="Logo">
     </a>
 
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="color: #fff; font-size: 24px;">☰</span>
+    </button>
+
     <!-- Nav Items -->
-    <ul class="navbar-menu montserrat">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#form">Contact</a></li>
-    </ul>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-menu">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#service">Services</a></li>
+        <li><a class="nav-link" href="#form">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
-
-
-<!--banner-->
-<!--banner-->
-<div class="custom-container">
-  <!-- First Row -->
-  <div class="row first-row">
-    <div class="col-md-10">
-      <h1 class="main-heading" data-aos="fade-up"> Designing Digital <span class="highlight"><span id="typed-text"></span></span> <br>That Inspire, Engage and <br>Convert </h1>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-
-  <!-- Second Row -->
-  <div class="row second-row mt-4">
-    <!-- Left Side -->
-    <div class="col-md-7 d-flex align-items-center " data-aos="fade-up">
-      <div class="row inner-left">
-        <!-- Image -->
-        <div class="col-md-6">
-          <img src="images/img1.jpg" alt="Sample" class="sample-img">
-        </div>
-
-        <!-- Round Button with Arrow -->
-        <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
-          <div class="glass-circle">
-             <a href="#form">
-            <img src="images/img2.png" alt="Arrow" class="arrow-icon">
-              </a>
-          </div>
+    <!-- Banner Content -->
+    <div class="custom-container" style="position: relative; z-index: 1; padding-top: 150px;">
+      <div class="row first-row">
+        <div class="col-md-10">
+          <h1 class="main-heading">
+            Designing Digital <span class="highlight">Solutions</span> <br>
+            That Inspire, Engage and <br>Convert
+          </h1>
         </div>
       </div>
-    </div>
 
-    <!-- Right Side (empty) -->
-    <div class="col-md-5"></div>
+      <div class="row second-row mt-4 ">
+        <div class="col-md-7 d-flex align-items-center">
+          <div class="row inner-left">
+            <div class="col-md-6">
+              <img src="images/img1.jpg" alt="Sample" class="sample-img" style="border-radius: 100px; width: 100%;">
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
+              <div class="glass-circle" >
+                <a href="#form"><img src="images/img2.png" alt="Arrow" class="arrow-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </div>
   </div>
-<!-- Curved Rotating Text -->
-<div class="curved-text-wrapper">
-  <svg viewBox="0 0 200 200" class="curved-text">
-    <defs>
-      <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
-    </defs>
-    <text>
-      <textPath href="#circlePath">
-        • CREATING IMPACTFUL DESIGNS • DIGITAL INNOVATION •
-      </textPath>
-    </text>
-  </svg>
-</div>
-</div>
-<br><br>
+
+<br>
 <!--about section-->
 <!--about section-->
-<div class="about-section custom-container">
+<div class="about-section custom-container" id="about">
   <div class="row">
     <!-- Left Column: Video -->
     <div class="col-md-6" data-aos="fade-right">
@@ -122,7 +115,7 @@
 <!--services section-->
 <!--services section-->
 <!-- Services Section -->
- <div class="container-fluid service">
+ <div class="container-fluid service" id="service">
 <div class="container services-container">
   <!-- First Row -->
   <div class="row mb-5">
@@ -422,10 +415,99 @@
 </footer>
 
 
+ <!-- Three.js Silk Shader -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script>
+    const vertexShader = `
+    varying vec2 vUv;
+    varying vec3 vPosition;
+    void main() {
+      vPosition = position;
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+    `;
+
+    const fragmentShader = `
+    varying vec2 vUv;
+    varying vec3 vPosition;
+
+    uniform float uTime;
+    uniform vec3  uColor;
+    uniform float uSpeed;
+    uniform float uScale;
+    uniform float uRotation;
+    uniform float uNoiseIntensity;
+
+    const float e = 2.71828182845904523536;
+
+    float noise(vec2 texCoord) {
+      float G = e;
+      vec2  r = (G * sin(G * texCoord));
+      return fract(r.x * r.y * (1.0 + texCoord.x));
+    }
+
+    vec2 rotateUvs(vec2 uv, float angle) {
+      float c = cos(angle);
+      float s = sin(angle);
+      mat2  rot = mat2(c, -s, s, c);
+      return rot * uv;
+    }
+
+    void main() {
+      float rnd = noise(gl_FragCoord.xy);
+      vec2 uv = rotateUvs(vUv * uScale, uRotation);
+      vec2 tex = uv * uScale;
+      float tOffset = uSpeed * uTime;
+      tex.y += 0.03 * sin(8.0 * tex.x - tOffset);
+      float pattern = 0.6 +
+                      0.4 * sin(5.0 * (tex.x + tex.y +
+                                       cos(3.0 * tex.x + 5.0 * tex.y) +
+                                       0.02 * tOffset) +
+                               sin(20.0 * (tex.x + tex.y - 0.1 * tOffset)));
+      vec4 col = vec4(uColor, 1.0) * vec4(pattern) - rnd / 15.0 * uNoiseIntensity;
+      col.a = 1.0;
+      gl_FragColor = col;
+    }
+    `;
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+    camera.position.z = 1;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('silk-canvas').appendChild(renderer.domElement);
+
+    const uniforms = {
+      uTime: { value: 0 },
+      uColor: { value: new THREE.Color("#4A90E2") },
+      uSpeed: { value: 2 },
+      uScale: { value: 1 },
+      uRotation: { value: 0 },
+      uNoiseIntensity: { value: 1.5 }
+    };
+
+    const geometry = new THREE.PlaneGeometry(2, 2);
+    const material = new THREE.ShaderMaterial({ vertexShader, fragmentShader, uniforms });
+    const plane = new THREE.Mesh(geometry, material);
+    scene.add(plane);
+
+    function animate(time) {
+      requestAnimationFrame(animate);
+      uniforms.uTime.value = time * 0.001;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <script>
+  <script>
   const words = ["Experiences", "Realities", "Connections"]; // 🔹 add more words here
   let i = 0;
   let j = 0;
@@ -459,6 +541,7 @@
   // Start effect
   typeEffect();
 </script>
+
 <script>
   // Select all links with hashes
   const links = document.querySelectorAll('a[href^="#"]');
