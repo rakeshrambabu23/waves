@@ -1,6 +1,9 @@
  body, html {
       overflow-x: hidden; /* Prevent horizontal overflow */
       margin: 0; /* Remove default margin */
+       font-family: 'Outfit', sans-serif;
+      color: #1b1b1b;
+
      
     }
 
@@ -1495,25 +1498,8 @@
 
 /* Responsive Design */
 @media (max-width: 767px) {
-  .services-page-heading {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .services-page-para {
-    text-align: center;
-  }
-
-  .services-page-btn {
-    display: block;
-    margin: 0 auto;
-    width: 35%;
-  }
-
-  .services-page-img {
-    margin-bottom: 30px;
-    margin: 10px;
-    width: 95%;
+  .services-page{
+    display: none;
   }
 }
 
