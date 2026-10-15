@@ -1,793 +1,158 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>UXwave Studio | Cinematic websites and web products</title>
+<meta name="description" content="UXwave is a software company that designs and builds cinematic websites and web products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Martian+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!--stylesheet-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <!-- Optional for PNG -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- AOS CSS -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
-
-   <!--google api-->
-
-   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
-
-   <title>UXwave Studio | Creative Web Design & UI/UX Development Agency</title>
-    <meta name="description" content="UXwave Studio is a creative web design and UI/UX development agency that transforms ideas into powerful digital experiences. We craft responsive, modern, and user-centric websites to elevate your brand presence.">
-    <meta name="keywords" content="UXwave Studio, UI UX Design, Web Development, Creative Agency, Responsive Websites, UX Design Company, Frontend Development, Digital Studio">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="UXwave Studio">
-    <meta name="language" content="English">
-    <meta name="theme-color" content="#6A00FF">
-
-  </head>
-  <body>
-
-    <!--navbar-->
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-custom  ">
-  <div class="container custom-container">
-    <!-- Logo -->
-   <a class="navbar-brand" href="index.html">
-    <img src="images/logo.png" alt="Logo" class="logo-img">
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html" aria-label="UXwave home">
+      <svg width="28" height="18" viewBox="0 0 28 18" fill="none" aria-hidden="true"><path d="M1 9C4 1 8 1 10 9S16 17 19 9S24 2 27 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      UXwave
     </a>
-
-
-    <!-- Toggler (Mobile) -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Nav Items -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <span class="only-m"><a class="btn" href="contact.html">Start a project</a></span>
+    </nav>
+    <a class="btn sm cta" href="contact.html">Start a project</a>
+    <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="links">Menu</button>
   </div>
-</nav>
+</header>
 
-    
-<!--banner-->
-<!--banner-->
-<!-- Banner Section -->
-<div class="container banner-container text-center">
-  <h1 class="banner-heading bagel-fat-one-regular" 
-      data-aos="fade-down" 
-      data-aos-duration="1200" 
-      data-aos-delay="200">
-    Welcome to UXwave <span id="typed-studio"></span>
-  </h1>
+<main>
 
-  <div class="banner-buttons" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-    <a href="about.html" class="btn btn-white">Learn More</a>
-    <a href="https://www.instagram.com/uxwave_studio/" target="_blank" class="btn btn-black">Get Started</a>
-  </div>
-</div>
-
-
-
-<!--logo marqee-->
-<!--logo marquee-->
-<section class="clients-section py-5">
-  <div class="container custom-container">
-    <div class="row align-items-center">
-      <!-- Heading -->
-      <div class="col-md-2">
-        <h3 class="clients-heading">Our<br> Clients</h3>
-         <div class="heading-line"></div>
-      </div>
-
-      <!-- Marquee Logos -->
-      <div class="col-md-10">
-        <div class="marquee">
-          <div class="marquee-content">
-            <img src="clients/logo1.png" alt="Client 1">
-            <img src="clients/logo2.png" alt="Client 2">
-            <img src="clients/logo3.png" alt="Client 3">
-            <img src="clients/logo4.png" alt="Client 4">
-            <img src="clients/logo5.png" alt="Client 5">
-            <img src="clients/logo6.png" alt="Client 6">
-            <!-- repeat logos for continuous scroll -->
-            <img src="clients/logo1.png" alt="Client 1">
-            <img src="clients/logo2.png" alt="Client 2">
-            <img src="clients/logo3.png" alt="Client 3">
+  <section class="hero">
+    <div class="wrap">
+      <div class="frame hero-frame">
+        <canvas class="cv" id="heroCanvas" data-scene="wave" data-sx=".72" aria-hidden="true"></canvas>
+        <div class="vignette"></div>
+        <div class="shade"></div>
+        <div class="hud top"><span>Scene 01 / UXwave Studio</span><span id="tc">00:00:12:08</span></div>
+        <h1 class="hero-h"><span class="ln">Cinematic websites</span><span class="ln">for ambitious brands.</span></h1>
+        <div class="hero-panel">
+          <p>UXwave is a software company that designs and builds websites and web products. Striking to look at, fast to load and made to bring in clients.</p>
+          <div class="acts">
+            <a class="btn" href="contact.html">Start a project</a>
+            <a class="btn ghost" href="portfolio.html">See our work</a>
           </div>
         </div>
+        <div class="hud bot"><span class="hide-s">2.39:1 / 24 fps</span></div>
       </div>
+      <div class="techline"><b>Built with</b><span>Next.js</span><span>TypeScript</span><span>Python</span><span>FastAPI</span><span>Generative AI</span><span>Voice AI</span></div>
     </div>
-  </div>
-</section>
-
-
-<!--about section-->
-<!--about section-->
-<section class="about-section py-5">
-  <div class="container custom-container">
-
-    <!-- Top Left Icon and "About Us" -->
-    <div class="d-flex align-items-center mb-4" data-aos="fade-right" data-aos-duration="1000">
-      <img src="images/x.png" alt="About Icon" class="about-icon mr-3">
-      <h4 class="about-title">About Us</h4>
-    </div>
-
-    <!-- Row 1: Heading + Button -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="about-heading">Designing Digital Experiences That Inspire</h2>
-      </div>
-      <div class="col-md-3"></div>
-      <div class="col-md-3 text-md-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-        <a href="https://www.instagram.com/uxwave_studio/" target="_blank" class="btn btn-primary about-btn">Let's Talk Now</a>
-      </div>
-    </div>
-
-    <!-- Row 2: Two Equal Height Cards -->
-    <div class="row mb-5 align-items-stretch">
-      <!-- Left Card -->
-      <div class="col-md-8 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
-        <div class="card about-card h-100 p-4 position-relative">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h3 class="card-heading">Design the Future with UXwave Studio</h3>
-              <p class="card-text" align="justify">
-                Professional UI/UX design and web development services crafted to elevate your brand, enhance user experience, and deliver measurable results.
-              </p>
-              <a href="https://www.instagram.com/uxwave_studio/" target="_blank" class="btn btn-black">Let's Talk</a>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-end">
-              <img src="images/img1.png" alt="About Image" class="card-img-bottom">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Card -->
-      <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-        <div class="card about-card h-100 p-3 position-relative">
-          <h5 class="card-heading">Looking for Innovation?</h5>
-          <p class="card-text">
-            Experience cutting-edge UI/UX design and next-gen web development with UXwave Studio.
-          </p>
-
-          <!-- Bottom Left: two round images + arrow -->
-          <div class="d-flex align-items-center mt-4">
-            <div class="circle-arrow d-flex justify-content-center align-items-center">
-              <a href="https://www.instagram.com/uxwave_studio/" target="_blank">
-              <i class="bi bi-arrow-right text-white"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 3: Three Info Cards (Icon on Top, Content Below) -->
-    <div class="row">
-      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
-        <div class="small-card light-card p-4">
-          <img src="images/img3.png" alt="Icon 1" class="info-icon mb-3">
-          <h5>Affordable</h5>
-          <p class="info-text" align="justify">
-            We craft premium-quality designs and digital solutions that fit your budget, delivering maximum value without compromise.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="small-card light-card p-4">
-          <img src="images/img2.png" alt="Icon 2" class="info-icon mb-3">
-          <h5>Experienced</h5>
-          <p class="info-text" align="justify">
-            Our skilled team brings years of experience in design, development, and digital strategy to every project we handle.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        <div class="small-card light-card p-4">
-          <img src="images/img4.png" alt="Icon 3" class="info-icon mb-3">
-          <h5>Innovative</h5>
-          <p class="info-text" align="justify">
-            We push boundaries with every project, blending modern design trends and smart technology to create unique, user-focused experiences.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!--our services-->
-<!--our services-->
-<section class="services-section py-5">
-  <div class="container custom-container">
-
-    <!-- Top Row: Icon + "Our Services" -->
-    <div class="d-flex align-items-center mb-4" data-aos="fade-right" data-aos-duration="1000">
-      <img src="images/x.png" alt="About Icon" class="about-icon mr-3">
-      <h4 class="about-title">Our Services</h4>
-    </div>
-
-    <!-- Heading + Paragraph -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="services-heading">Crafting Digital Experiences That Drive Success</h2>
-      </div>
-      <div class="col-md-2"></div>
-      <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-        <p class="services-text" align="justify">
-          At UXwave Studio, we blend design, technology, and strategy to deliver exceptional digital solutions. From UI/UX design to full-scale web development, our services are built to enhance user engagement and accelerate your brand’s growth.
-        </p>
-      </div>
-    </div>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- Card 1 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000">
-          <div class="service-card">
-            <img src="images/web.png" alt="Web Development" class="service-icon mb-3">
-            <h5 class="fw-bold">Web Development</h5>
-            <p>We create fast, responsive, and visually appealing websites that strengthen your brand and drive performance.</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          <div class="service-card">
-            <img src="images/ui.png" alt="UI/UX Design" class="service-icon mb-3">
-            <h5 class="fw-bold">UI/UX Design</h5>
-            <p>We design intuitive and engaging user experiences that transform ideas into beautiful, functional interfaces.</p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <div class="service-card">
-            <img src="images/word.png" alt="WordPress" class="service-icon mb-3">
-            <h5 class="fw-bold">WordPress</h5>
-            <p>We build and customize WordPress websites that are easy to manage, fully optimized, and built for scalability.</p>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-          <div class="service-card">
-            <img src="images/mobile.png" alt="Mobile App" class="service-icon mb-3">
-            <h5 class="fw-bold">Mobile App Design</h5>
-            <p>We design sleek, user-friendly mobile app interfaces that deliver smooth and engaging user journeys.</p>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-          <div class="service-card">
-            <img src="images/test.png" alt="Penetration Testing" class="service-icon mb-3">
-            <h5 class="fw-bold">Penetration Testing</h5>
-            <p>We secure your digital assets by identifying and fixing vulnerabilities across web, mobile, and network systems.</p>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-          <div class="service-card">
-            <img src="images/mart.png" alt="Digital Marketing" class="service-icon mb-3">
-            <h5 class="fw-bold">Digital Marketing</h5>
-            <p>We help your business grow online with data-driven strategies that boost reach, engagement, and conversions.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!--Our portfolio-->
-<!--Our portfolio-->
-<section class="portfolio-section py-5">
-  <div class="container custom-container">
-
-    <!-- Section Heading -->
-    <div class="d-flex align-items-center mb-4" data-aos="fade-right" data-aos-duration="1000">
-      <img src="images/x.png" alt="Portfolio Icon" class="about-icon mr-3">
-      <h4 class="about-title mb-0">Our Portfolio</h4>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- First Portfolio Item -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
-        <div class="portfolio position-relative">
-          <img src="images/img5.jpg" alt="TechVision Pvt Ltd" class="portfolio-image img-fluid">
-          <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-center">
-            <h5 class="portfolio-title">TechVision Pvt Ltd</h5>
-            <p class="portfolio-type">Web Development</p>
-            <p class="portfolio-text">
-              We build scalable and modern web solutions for businesses worldwide.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Second Portfolio Item -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="portfolio position-relative">
-          <img src="images/img6.jpg" alt="CyberCore Solutions" class="portfolio-image img-fluid">
-          <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-center">
-            <h5 class="portfolio-title">CyberCore Solutions</h5>
-            <p class="portfolio-type">Penetration Testing</p>
-            <p class="portfolio-text">
-              Providing advanced cybersecurity and risk mitigation services globally.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<br><br><br>
-
-<!--insdusties we serve-->
-<!--insdusties we serve-->
-<section class="industries-section">
-  <div class="container-fluid py-5 purple-top-bg">
-
-    <!-- Centered Heading -->
-    <div class="row">
-      <div class="col-12 text-center mb-4" data-aos="fade-down" data-aos-duration="1000">
-        <h2 class="industries-heading bagel-fat-one-regular">Industries We Serve</h2>
-        <p style="color: white;">
-          We deliver cutting-edge solutions across a diverse range of industries, <br>empowering businesses to innovate and thrive
-        </p>
-      </div>
-    </div>
-
-    <div class="container custom-container py-5 p-0"> <!-- Removed horizontal padding -->
-
-      <!-- Row 1: Full-width image -->
-      <div class="row mx-0" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-md-12 px-0">
-          <img src="images/img8.jpg" alt="Industries Banner" class="img-fluid industry-banner">
-        </div>
-      </div>
-
-      <!-- Row 2: Purple Background -->
-      <div class="row align-items-center industries-row mx-0">
-
-        <!-- Left Side -->
-        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-          <div class="industry-pills">
-            <button class="pill-btn"><i class="bi bi-bank"></i> Finance & Banking</button>
-            <button class="pill-btn"><i class="bi bi-hospital"></i> Healthcare</button>
-            <button class="pill-btn"><i class="bi bi-laptop"></i> IT Services</button>
-            <button class="pill-btn"><i class="bi bi-cart"></i> E-commerce</button>
-            <button class="pill-btn"><i class="bi bi-shield-lock"></i> Energy</button>
-            <button class="pill-btn"><i class="bi bi-book"></i> Education</button>
-            <button class="pill-btn"><i class="bi bi-people"></i> Nonprofit</button>
-            <button class="pill-btn"><i class="bi bi-building"></i> Real Estate</button>
-            <button class="pill-btn"><i class="bi bi-gear"></i> Manufacturing</button>
-          </div>
-        </div>
-
-        <!-- Vertical Divider -->
-        <div class="col-md-1 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-          <div class="vertical-line"></div>
-        </div>
-
-        <!-- Right Side -->
-        <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-          <div class="industry-content text-white">
-            <p class="mb-3" align="justify">
-              We help brands grow by blending creativity, technology, and strategy to build powerful digital experiences that leave a lasting impact.
-            </p>
-            <ul class="industry-list">
-              <li>UI/UX Strategy & Design</li>
-              <li>Web & App Development</li>
-              <li>Digital Marketing Solutions</li>
-            </ul>
-            <a href="https://www.instagram.com/uxwave_studio/" target="_blank" class="get-started-btn">Get Started Now </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!--Why Choose us-->
-<!--Why Choose us-->
-<section class="why-choose-us py-5">
-  <div class="container custom-container">
-
-    <!-- Heading -->
-    <p class="text-center bagel-fat-one-regular choose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Why Choose Us</p>
-    <h2 class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-      Next-Gen Solutions for a <br>Next-Gen World
-    </h2>
-
-    <!-- Background Image Container -->
-    <div class="bg-image-container position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-      
-      <!-- Top Row -->
-      <div class="row no-gutters">
-        <div class="col-md-4" >
-          <div class="card-overlay card-overlay-mobile" style="border-top-left-radius: 20px;">
-            <img src="images/img9.png" alt="Icon" class="card-icon">
-            <h5>Future-Ready Solutions</h5>
-            <p>Our team crafts strategies and products designed to adapt and thrive in an ever-evolving digital world.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4"></div>
-
-        <div class="col-md-4" >
-          <div class="card-overlay" style="border-top-right-radius: 20px;">
-            <img src="images/img10.png" alt="Icon" class="card-icon">
-            <h5>Expertise You Can Trust</h5>
-            <p>With years of combined experience, we provide reliable, high-quality solutions tailored to your unique needs.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Row -->
-      <div class="row no-gutters">
-        <div class="col-md-4"></div>
-        <div class="col-md-4" >
-          <div class="card-overlay card-overlay-mobiles">
-            <img src="images/img11.png" alt="Icon" class="card-icon">
-            <h5>Seamless Collaboration</h5>
-            <p>We work closely with you, integrating insights and innovation to achieve measurable impact and growth.</p>
-          </div>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!--Testimonials-->
-<!--Testimonials-->
-<section class="testimonials-section py-5">
-  <div class="container custom-container">
-
-    <!-- Top Row: Icon + Heading -->
-    <div class="d-flex align-items-center mb-4" data-aos="fade-right" data-aos-duration="1000">
-      <img src="images/x.png" alt="About Icon" class="about-icon mr-3">
-      <h4 class="about-title">What Our Clients Say</h4>
-    </div>
-
-    <div class="row">
-
-      <!-- Testimonial 1 -->
-      <div class="col-md-4 gap" data-aos="fade-up" data-aos-duration="1000">
-        <div class="testimonial p-4">
-          <img src="images/quote-icon.png" alt="Quote Icon" class="testimonial-icon mb-3">
-          <p class="testimonial-text">
-            “Their creativity and technical expertise transformed our ideas into an outstanding digital experience. Truly next-level design.”
-          </p>
-          <div class="client-info mt-3">
-            <div>
-              <h6 class="client-name">Arjun Mehta</h6>
-              <span class="client-role">Product Manager</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="col-md-4 gap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="testimonial p-4">
-          <img src="images/quote-icon.png" alt="Quote Icon" class="testimonial-icon mb-3">
-          <p class="testimonial-text">
-            “They understand modern design and usability like no one else. Our website feels futuristic yet perfectly functional.”
-          </p>
-          <div class="client-info mt-3">
-            <div>
-              <h6 class="client-name">Sneha Reddy</h6>
-              <span class="client-role">Creative Director</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="col-md-4 gap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        <div class="testimonial p-4">
-          <img src="images/quote-icon.png" alt="Quote Icon" class="testimonial-icon mb-3">
-          <p class="testimonial-text">
-            “Exceptional team! Their UI/UX approach brought elegance and efficiency together. Highly recommended for digital excellence.”
-          </p>
-          <div class="client-info mt-3">
-            <div>
-              <h6 class="client-name">Rahul Verma</h6>
-              <span class="client-role">Tech Entrepreneur</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!--Contact form-->
-<!--Contact form-->
-<section class="enquiry-section py-5">
-  <div class="container custom-container">
-
-    <!-- Section Heading -->
-    <h3 class="enquiry-heading mb-5 text-center" data-aos="fade-down" data-aos-duration="1000">
-      <img src="images/x.png" alt="Start Icon" class="enquiry-icon mr-2">
-      Start Your Project
-    </h3>
-
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-
-        <form class="enquiry-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="89341098-ff38-4fb6-a6ec-9f5d22382f90">
-          <input type="hidden" name="subject" value="New Enquiry from UXwave Studio">
-          <input type="hidden" name="from_name" value="UXwave Studio Website">
-
-          <p>
-            My name is 
-            <input type="text" name="name" placeholder="(First, Last)" class="form-input" required>
-          </p>
-
-          <p>
-            from 
-            <select name="country" class="form-select" required>
-              <option value="India">India</option>
-              <option value="USA">USA</option>
-              <option value="Europe">Europe</option>
-              <option value="Australia">Australia</option>
-              <option value="Other">Other</option>
-            </select>
-            and I’m looking for 
-            <select name="service" class="form-select" required>
-              <option value="Web Design">Web Design</option>
-              <option value="UI/UX Design">UI/UX Design</option>
-              <option value="Web Development">Web Development</option>
-              <option value="Branding">Branding</option>
-              <option value="App Design">App Design</option>
-            </select>
-            for my 
-            <select name="project_type" class="form-select" required>
-              <option value="Business">Business</option>
-              <option value="Startup">Startup</option>
-              <option value="Portfolio">Portfolio</option>
-              <option value="Agency">Agency</option>
-              <option value="Client">Client</option>
-            </select>.
-          </p>
-
-          <p>
-            My email is 
-            <input type="email" name="email" placeholder="email@example.com" class="form-input" required>
-          </p>
-
-          <p>
-            You can reach me at 
-            <input type="text" name="phone" placeholder="+91 9876543210" class="form-input">
-          </p>
-
-          <button type="submit" class="submit-btn mt-3">Send Enquiry</button>
-        </form>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<br><br>
-<!--Footer-->
-<!--Footer-->
-<section class="footer-section py-5">
-  <div class="container footer-container p-5 rounded-4">
-    <div class="row gy-4 text-white">
-
-      <!-- Col 1: About -->
-      <div class="col-md-3">
-        <h5 class="footer-title mb-3">About UXWAVE</h5>
-        <p class="footer-text">
-          uxwave studio is a creative web and UI/UX development agency, crafting elegant digital experiences that drive growth and innovation.
-        </p>
-      </div>
-
-      <!-- Col 2: Services -->
-      <div class="col-md-3">
-        <h5 class="footer-title mb-3">Our Services</h5>
-        <ul class="footer-list list">
-        <li><a href="services.html">Web Development</a></li>
-          <li><a href="services.html">App Development</a></li>
-          <li><a href="services.html">UI/UX Design</a></li>
-          <li><a href="services.html">Digital Marketing</a></li>
-          <li><a href="services.html">WordPress</a></li>
-          <li><a href="services.html">Penetration Testing</a></li>
+  </section>
+
+  <section class="sec">
+    <div class="wrap about-grid">
+      <figure class="frame about-fig">
+        <canvas class="cv" data-scene="rings" aria-hidden="true"></canvas>
+        <figcaption>Studio, frame 02</figcaption>
+      </figure>
+      <div class="about-copy">
+        <h2>A software company that directs every pixel.</h2>
+        <p class="lede">UXwave was founded in 2024. We build AI-powered products, and we bring the same engineering discipline to the websites we design for clients.</p>
+        <ul class="principles">
+          <li>Simplicity is power. <span>Complexity is failure.</span></li>
+          <li>Every detail is a decision. <span>We make them on purpose.</span></li>
+          <li>Ship fast. <span>Then refine faster.</span></li>
         </ul>
+        <a class="btn ghost" href="about.html">About UXwave</a>
       </div>
+    </div>
+  </section>
 
-      <!-- Col 3: Company -->
-      <div class="col-md-3">
-        <h5 class="footer-title mb-3">Company</h5>
-        <ul class="footer-list list">
-          <li ><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="sec-head"><h2>What we make</h2><a class="link" href="contact.html">Discuss your project</a></div>
+      <div class="svc-list">
+        <a class="svc" href="contact.html"><h3>Website design</h3><p>Art-directed layouts, type and motion built around your brand and your buyer.</p><span class="tags">Art direction, UI, motion</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="svc" href="contact.html"><h3>Web development</h3><p>Fast, accessible sites in Next.js and TypeScript, with a CMS your team can use without help.</p><span class="tags">Next.js, TypeScript, CMS</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="svc" href="contact.html"><h3>E-commerce</h3><p>Storefronts that load quickly and make buying obvious, from the catalog to checkout.</p><span class="tags">Catalog, checkout, payments</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="svc" href="contact.html"><h3>UI and product design</h3><p>Dashboards, portals and web apps designed around the work people do all day.</p><span class="tags">Research, prototypes, design systems</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="svc" href="contact.html"><h3>Brand identity</h3><p>Logo, color, type and guidelines, so your site and everything around it feel like one thing.</p><span class="tags">Logo, guidelines, assets</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="svc" href="contact.html"><h3>AI and automation</h3><p>Voice agents, chat assistants and workflow automation connected to your site and your CRM.</p><span class="tags">Voice AI, chat, integrations</span><span class="go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
       </div>
+    </div>
+  </section>
 
-      <!-- Col 4: Address & Social -->
-      <div class="col-md-3">
-        <h5 class="footer-title mb-3">Address</h5>
-        <p class="footer-text">Visakhapatnam, Andhra Pradesh, India</p>
-        <div class="social-icons mt-3">
-          <a href="https://www.instagram.com/uxwave_studio/" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/uxwave_studio/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.instagram.com/uxwave_studio/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/uxwave_studio/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><h2>Selected work</h2><a class="link" href="portfolio.html">All projects</a></div>
+      <div class="work-grid three" id="home-work"></div>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="sec-head"><h2>What clients say</h2><p class="note">Sample frames. Replace each one with an approved quote from a real client before launch.</p></div>
+      <div class="strip">
+        <div class="frames">
+          <article class="tframe"><blockquote>Replace this with a real client quote about the design. Two or three sentences about the result work best.</blockquote><div class="who"><div class="av"></div><div><b>Client name</b><span>Role, Company</span></div><span class="chip-tag">Sample</span></div></article>
+          <article class="tframe"><blockquote>Replace this with a real client quote about working with the team and how the project ran.</blockquote><div class="who"><div class="av"></div><div><b>Client name</b><span>Role, Company</span></div><span class="chip-tag">Sample</span></div></article>
+          <article class="tframe"><blockquote>Replace this with a real client quote about what changed after launch, such as enquiries or sales.</blockquote><div class="who"><div class="av"></div><div><b>Client name</b><span>Role, Company</span></div><span class="chip-tag">Sample</span></div></article>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Row 2: Big Word -->
-    <div class="row mt-4">
-      <div class="col-md-12 text-center">
-        <h1 class="uxwave-big bagel-fat-one-regular">UXWAVE</h1>
+  <section class="sec">
+    <div class="wrap why-grid">
+      <div class="sticky">
+        <h2>Why brands choose UXwave</h2>
+        <p class="lede">A small team that designs and builds together, so nothing gets lost between the idea and the live site.</p>
+        <a class="btn ghost" href="about.html" style="align-self:flex-start">Meet the team</a>
+      </div>
+      <div class="why">
+        <div><h3>One team, start to finish</h3><p>Designers and engineers work side by side, so what gets designed is what gets built.</p></div>
+        <div><h3>Fast by default</h3><p>Pages are built to load quickly on phones, and we test performance before every launch.</p></div>
+        <div><h3>Built to convert</h3><p>Every page has one job. We design the shortest path from first look to first enquiry.</p></div>
+        <div><h3>Ready for AI</h3><p>Voice agents, chat and automation connect to your site without a rebuild.</p></div>
+        <div><h3>Clear scope and price</h3><p>You see the plan, the milestones and the cost before work starts.</p></div>
+        <div><h3>Support after launch</h3><p>We stay on for fixes, updates and the next phase of the site.</p></div>
       </div>
     </div>
+  </section>
 
-    <!-- Row 3: HR & Credits -->
-    <div class="row  align-items-center">
-      <div class="col-md-12">
-        <hr class="footer-hr mb-3">
+  <section class="band">
+    <div class="streak"></div>
+    <div class="wrap band-in">
+      <h2>Have a project in mind? Let's make it unforgettable.</h2>
+      <p>Tell us what you are building. We reply by email with questions, a rough plan and the next step.</p>
+      <div class="acts">
+        <a class="btn light" href="contact.html">Start a project</a>
+        <button class="btn line" type="button" data-copy="uxwavestudio@gmail.com">Copy email</button>
       </div>
-      <div class="col-md-6 mt-4">
-        <p class="mb-0 footer-credits">© 2025 UXWAVE. All Rights Reserved.</p>
-      </div>
+      <div class="mail">uxwavestudio@gmail.com</div>
     </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="logo" href="index.html"><svg width="28" height="18" viewBox="0 0 28 18" fill="none" aria-hidden="true"><path d="M1 9C4 1 8 1 10 9S16 17 19 9S24 2 27 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>UXwave</a>
+        <p>A software company that designs and builds cinematic websites and web products.</p>
+      </div>
+      <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>uxwavestudio@gmail.com</li><li><a href="contact.html">Start a project</a></li></ul></div>
+    </div>
+    <div class="foot-word" aria-hidden="true">UXwave</div>
+    <div class="foot-bot"><span>&copy; 2026 UXwave. All rights reserved.</span><span>Building tomorrow's software.</span></div>
   </div>
-</section>
+</footer>
 
-
-
-<!-- AOS JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-
-<script>
-
-  const text = "Studio";
-const target = document.getElementById("typed-studio");
-let index = 0;
-let typing = true;
-
-function typeStudio() {
-  if (typing) {
-    target.textContent = text.substring(0, index + 1);
-    index++;
-    if (index === text.length) {
-      typing = false;
-      setTimeout(typeStudio, 1000); // pause before deleting
-      return;
-    }
-  } else {
-    target.textContent = text.substring(0, index - 1);
-    index--;
-    if (index === 0) {
-      typing = true;
-      setTimeout(typeStudio, 500); // pause before typing again
-      return;
-    }
-  }
-  setTimeout(typeStudio, 150); // typing/deleting speed
-}
-
-typeStudio();
-
-
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
-  }
-});
-
-    
-    const container = document.querySelector('.banner-container');
-    const particlesContainer = document.createElement('div');
-    particlesContainer.className = 'particles';
-    container.appendChild(particlesContainer);
-
-    for (let i = 0; i < 20; i++) {
-      const particle = document.createElement('div');
-      particle.className = 'particle';
-      particle.style.left = `${Math.random() * 100}%`;
-      particle.style.top = `${Math.random() * 100}%`;
-      particle.style.animationDelay = `${Math.random() * 6}s`;
-      particlesContainer.appendChild(particle);
-    }
-
-</script>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  </body>
+<script src="js/main.js"></script>
+</body>
 </html>
